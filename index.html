@@ -1,0 +1,3510 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Rafael Latief Faustine — Pelajar Rekayasa Perangkat Lunak SMKN 2 Karanganyar, Web Developer & Calon AI Engineer.">
+  <meta name="keywords"
+    content="Rafael Latief Faustine, Web Developer, RPL, SMKN 2 Karanganyar, Portofolio, Front-end, Full-Stack">
+  <meta name="author" content="Rafael Latief Faustine">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rafael Latief Faustine — Web Developer & RPL Student">
+  <meta property="og:description" content="Portofolio Rafael Latief Faustine — Pelajar RPL SMKN 2 Karanganyar.">
+  <meta property="og:image" content="pict.jpeg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rafael Latief Faustine — Web Developer & RPL Student">
+  <meta name="twitter:description" content="Portofolio Rafael Latief Faustine — Menampilkan karya nyata web, keahlian Full-Stack & AI Aspirant.">
+  <meta name="twitter:image" content="pict.jpeg">
+
+  <title>Rafael Latief Faustine — Web Developer & RPL Student</title>
+
+  <!-- Google Fonts: DM Serif Display & DM Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Devicon: High-Definition Tech & Software Icons -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!-- GSAP Animation Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+
+  <style>
+    /* ============================================================
+       RAFAEL LATIEF FAUSTINE — PORTFOLIO
+       Retro-Vintage Warm Cream & Forest Green Style
+       Inspired by Fahry Rasyidinanta Portfolio Aesthetic
+       ============================================================ */
+
+    /* ===== RESET & ROOT ===== */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      /* Theme: Cyber Obsidian & Electric Cyan + Amber Gold */
+      --green: #38BDF8;           /* Primary Accent: Electric Cyan */
+      --green-dark: #F1F5F9;      /* Primary Headings: Crisp Pure White */
+      --green-light: #7DD3FC;     /* Subtitle Accent: Soft Electric Cyan */
+      --yellow: #F59E0B;          /* Luminous Amber Gold */
+      --yellow-light: #FCD34D;    /* Warm Gold Glow */
+      --orange: #FB7185;          /* Warm Coral / Rose Accent */
+      --orange-light: #FDA4AF;
+      
+      --cream: #0A0D14;           /* Main Canvas Background: Cyber Obsidian */
+      --cream-dark: #0F141F;      /* Secondary Section Canvas: Deep Slate Navy */
+      --cream-card: #151B28;      /* Card Surface */
+      --brown: #D97706;
+      --black: #F1F5F9;           /* Main Text: Crisp Off-White */
+      --charcoal: #94A3B8;        /* Muted Text: Slate */
+      --white: #151B28;           /* Card Surfaces: Rich Dark Slate */
+      --gray: #94A3B8;            /* Body Paragraphs: Muted Slate */
+      --gray-light: #1C2436;      /* Elevated Inner Surface */
+      --border: #222C3E;          /* Modern Dark Border */
+      --border-accent: rgba(56, 189, 248, 0.4);
+
+      --font-display: 'DM Serif Display', Georgia, serif;
+      --font-body: 'DM Sans', -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --radius-sm: 10px;
+      --radius-md: 18px;
+      --radius-lg: 28px;
+      --radius-pill: 9999px;
+
+      --transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+      --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.45);
+      --shadow-md: 0 12px 36px rgba(0, 0, 0, 0.60);
+      --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.75);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 5rem;
+      font-size: 16px;
+      overflow-x: hidden;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--cream);
+      color: var(--black);
+      overflow-x: hidden;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    ::selection {
+      background: var(--green);
+      color: #0A0D14;
+    }
+
+    /* ===== CUSTOM CURSOR ===== */
+    .custom-cursor {
+      width: 24px;
+      height: 24px;
+      border: 2px solid var(--green);
+      border-radius: 50%;
+      position: fixed;
+      pointer-events: none;
+      z-index: 99999;
+      transform: translate(-50%, -50%);
+      transition: transform 0.12s ease-out, width 0.3s ease, height 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+      display: none;
+    }
+
+    .cursor-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--green);
+      border-radius: 50%;
+      position: fixed;
+      pointer-events: none;
+      z-index: 99999;
+      transform: translate(-50%, -50%);
+      display: none;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+
+      .custom-cursor,
+      .cursor-dot {
+        display: block;
+      }
+    }
+
+    .custom-cursor.hover {
+      width: 52px;
+      height: 52px;
+      border-color: var(--green);
+      background: rgba(56, 189, 248, 0.15);
+    }
+
+    /* ===== PRELOADER ===== */
+    .preloader {
+      position: fixed;
+      inset: 0;
+      z-index: 100000;
+      background: #0A0D14;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1.25rem;
+      transition: clip-path 0.85s cubic-bezier(0.77, 0, 0.175, 1);
+      clip-path: inset(0 0 0 0);
+    }
+
+    .preloader.done {
+      clip-path: inset(0 0 100% 0);
+      pointer-events: none;
+    }
+
+    .preloader-name {
+      font-family: var(--font-display);
+      font-size: 3.2rem;
+      color: var(--yellow);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .preloader-bar {
+      width: 180px;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 99px;
+      overflow: hidden;
+    }
+
+    .preloader-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--green), var(--yellow));
+      animation: fillPreloader 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    @keyframes fillPreloader {
+      to {
+        width: 100%;
+      }
+    }
+
+    /* ===== SPARKLE ICON ===== */
+    .sparkle {
+      color: var(--yellow);
+      display: inline-block;
+      animation: spinSlow 12s linear infinite;
+    }
+
+    @keyframes spinSlow {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 18px 0;
+      transition: var(--transition);
+      background: transparent;
+    }
+
+    .navbar.scrolled {
+      background: rgba(10, 13, 20, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 12px 0;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--green-dark);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #CBD5E1;
+      position: relative;
+      padding: 0.25rem 0;
+    }
+
+    .nav-links a:not(.nav-cta)::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--green);
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--green);
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      background: var(--yellow) !important;
+      color: #0A0D14 !important;
+      padding: 0.55rem 1.35rem !important;
+      border-radius: var(--radius-pill);
+      font-weight: 700 !important;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: var(--transition);
+      box-shadow: 0 4px 14px rgba(245, 158, 11, 0.3);
+    }
+
+    .nav-cta:hover {
+      background: var(--yellow-light) !important;
+      color: #0A0D14 !important;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(245, 158, 11, 0.45);
+    }
+
+    /* Mobile Toggle */
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 6px;
+      z-index: 1002;
+    }
+
+    .nav-toggle span {
+      width: 24px;
+      height: 2.5px;
+      background: var(--green-dark);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    .nav-toggle.open span:nth-child(1) {
+      transform: translateY(7.5px) rotate(45deg);
+    }
+
+    .nav-toggle.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav-toggle.open span:nth-child(3) {
+      transform: translateY(-7.5px) rotate(-45deg);
+    }
+
+    /* ============ HERO SECTION ============ */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 110px;
+      padding-bottom: 70px;
+      overflow: hidden;
+      background: var(--cream);
+    }
+
+    /* Giant Background Watermark Text */
+    .hero-bg-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: var(--font-display);
+      font-size: clamp(5rem, 16vw, 15rem);
+      line-height: 0.85;
+      font-weight: 900;
+      color: rgba(255, 255, 255, 0.025);
+      user-select: none;
+      pointer-events: none;
+      white-space: nowrap;
+      text-align: center;
+      z-index: 0;
+      letter-spacing: -0.04em;
+    }
+
+    .hero-stars,
+    .hero-stars-2 {
+      position: absolute;
+      color: var(--yellow);
+      font-size: 2rem;
+      pointer-events: none;
+      animation: pulseStar 3s ease-in-out infinite alternate;
+    }
+
+    .hero-stars {
+      top: 18%;
+      right: 12%;
+    }
+
+    .hero-stars-2 {
+      bottom: 20%;
+      left: 8%;
+      animation-delay: -1.5s;
+    }
+
+    @keyframes pulseStar {
+      0% {
+        transform: scale(0.8) rotate(0deg);
+        opacity: 0.5;
+      }
+
+      100% {
+        transform: scale(1.2) rotate(45deg);
+        opacity: 1;
+      }
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 3.5rem;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Left: Portrait Frame & Quote */
+    .hero-left {
+      position: relative;
+    }
+
+    .hero-image-wrapper {
+      position: relative;
+      max-width: 440px;
+      margin: 0 auto;
+    }
+
+    .hero-img-box {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 2px solid var(--green);
+      background: var(--cream-dark);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 25px rgba(56, 189, 248, 0.15);
+    }
+
+    .hero-img-box img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      object-position: center top;
+      transition: transform 0.6s ease;
+    }
+
+    .hero-img-box:hover img {
+      transform: scale(1.03);
+    }
+
+    .hero-image-frame {
+      position: absolute;
+      inset: -12px;
+      border: 2px dashed rgba(56, 189, 248, 0.35);
+      border-radius: calc(var(--radius-lg) + 12px);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .hero-badge-tag {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: var(--yellow);
+      color: #0A0D14;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      z-index: 2;
+    }
+
+    .hero-quote {
+      position: absolute;
+      bottom: -24px;
+      right: -20px;
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      max-width: 290px;
+      font-size: 12px;
+      line-height: 1.55;
+      color: var(--gray);
+      box-shadow: var(--shadow-md);
+      font-style: italic;
+      z-index: 3;
+    }
+
+    .hero-quote::before {
+      content: '“';
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      color: var(--yellow);
+      line-height: 0;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    /* Right: Title & Socials */
+    .hero-right {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--green);
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      padding: 6px 16px;
+      border-radius: var(--radius-pill);
+      align-self: flex-start;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 6.5vw, 5.8rem);
+      line-height: 0.95;
+      font-weight: 900;
+      color: var(--green-dark);
+      letter-spacing: -0.04em;
+    }
+
+    .hero-title .highlight {
+      color: var(--yellow);
+      font-style: italic;
+    }
+
+    .hero-desc {
+      font-size: 1.1rem;
+      color: var(--gray);
+      max-width: 520px;
+      line-height: 1.75;
+    }
+
+    .hero-desc strong {
+      color: var(--black);
+    }
+
+    .hero-desc em {
+      color: var(--green);
+    }
+
+    .hero-socials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+    }
+
+    .hero-social-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-pill);
+      padding: 8px 18px;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--black);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      text-decoration: none;
+    }
+
+    .hero-social-link .social-icon-box {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .hero-social-link .social-icon-box svg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      transition: transform 0.25s ease;
+    }
+
+    .hero-social-link:hover {
+      background: #1C2436;
+      color: var(--green);
+      border-color: var(--green);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 22px rgba(56, 189, 248, 0.25);
+    }
+
+    .hero-social-link:hover .social-icon-box svg {
+      transform: scale(1.15);
+    }
+
+    /* ============ INFINITE MARQUEE ============ */
+    .marquee-section {
+      background: var(--cream-dark);
+      color: var(--black);
+      padding: 16px 0;
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .marquee-track {
+      display: inline-flex;
+      animation: marquee 26s linear infinite;
+    }
+
+    .marquee-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-style: italic;
+      letter-spacing: 0.04em;
+      padding: 0 24px;
+      color: var(--black);
+    }
+
+    .marquee-item .dot {
+      width: 7px;
+      height: 7px;
+      background: var(--green);
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* ============ ABOUT SECTION ============ */
+    .about-section {
+      padding: 100px 0;
+      background: var(--cream);
+      position: relative;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .about-hello {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 5.5vw, 4.2rem);
+      line-height: 1.05;
+      color: var(--green-dark);
+      margin-bottom: 1.5rem;
+    }
+
+    .name-highlight {
+      color: var(--yellow);
+      position: relative;
+      display: inline-block;
+    }
+
+    .name-highlight::after {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: 0;
+      width: 100%;
+      height: 8px;
+      background: rgba(245, 158, 11, 0.25);
+      z-index: -1;
+      border-radius: 4px;
+    }
+
+    .about-text {
+      font-size: 1.1rem;
+      color: var(--gray);
+      line-height: 1.8;
+      margin-bottom: 1.75rem;
+    }
+
+    .about-text strong {
+      color: var(--black);
+    }
+
+    .about-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-mono);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--green);
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      padding: 10px 22px;
+      border-radius: var(--radius-pill);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .about-link:hover {
+      background: var(--green);
+      color: #0A0D14;
+      border-color: var(--green);
+      transform: translateY(-2px);
+    }
+
+    /* Right About Card */
+    .about-photo-wrapper {
+      position: relative;
+      max-width: 360px;
+      margin: 0 auto;
+    }
+
+    .about-photo-box {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 2px solid var(--green);
+      box-shadow: var(--shadow-lg);
+      background: var(--white);
+    }
+
+    .about-photo-box img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+    }
+
+    .about-badge {
+      position: absolute;
+      top: 14px;
+      right: -16px;
+      background: var(--yellow);
+      color: #0A0D14;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .about-badge-bottom {
+      position: absolute;
+      top: 56px;
+      right: -24px;
+      background: var(--green);
+      color: #0A0D14;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .contact-card-box {
+      margin-top: 1.5rem;
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 18px 22px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .contact-card-box h4 {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      color: var(--green-dark);
+      margin-bottom: 8px;
+    }
+
+    .contact-card-box p {
+      font-size: 13px;
+      color: var(--gray);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ============ RESUME / TIMELINE SECTION ============ */
+    .resume-section {
+      padding: 90px 0;
+      background: var(--cream-dark);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-label {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      color: var(--green-dark);
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 2px;
+      background: var(--border);
+    }
+
+    .resume-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+
+    .timeline {
+      position: relative;
+      padding-left: 28px;
+      border-left: 2px dashed rgba(56, 189, 248, 0.4);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2.2rem;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -35px;
+      top: 4px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--green);
+      border: 3px solid var(--cream-dark);
+      box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.25);
+    }
+
+    .timeline-year {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--yellow);
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.25);
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: var(--radius-pill);
+      margin-bottom: 6px;
+    }
+
+    .timeline-title {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      color: var(--green-dark);
+      margin-bottom: 4px;
+    }
+
+    .timeline-subtitle {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      color: var(--green-light);
+      font-weight: 600;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .timeline-desc {
+      font-size: 13.5px;
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
+    /* Soft Skills */
+    .soft-skills-title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      margin: 1.5rem 0 12px;
+      color: var(--green-dark);
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill-tag {
+      background: var(--white);
+      color: var(--black);
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      font-size: 12px;
+      font-weight: 600;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .skill-tag:hover {
+      background: var(--green);
+      color: #0A0D14;
+      border-color: var(--green);
+      transform: translateY(-2px);
+    }
+
+    /* ============ TECHNICAL SKILLS ============ */
+    .skills-section {
+      padding: 100px 0;
+      background: var(--cream);
+    }
+
+    .section-header-center {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 3.5rem;
+    }
+
+    .section-header-center h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+      color: var(--green-dark);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-header-center p {
+      font-size: 1.05rem;
+      color: var(--gray);
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+    }
+
+    .skill-box-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .skill-box-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      color: var(--green-dark);
+      margin-bottom: 1.5rem;
+      padding-bottom: 12px;
+      border-bottom: 1px dashed var(--border);
+    }
+
+    /* Software & Tools Grid - High Contrast & Large Icons */
+    .software-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-bottom: 1.8rem;
+    }
+
+    @media (max-width: 600px) {
+      .software-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+    }
+
+    .software-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 8px 12px;
+      background: var(--cream-dark);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+      position: relative;
+      text-align: center;
+    }
+
+    .software-item:hover {
+      transform: translateY(-6px);
+      border-color: var(--green);
+      background: #1C2436;
+      box-shadow: 0 12px 24px rgba(56, 189, 248, 0.2);
+    }
+
+    .software-icon {
+      width: 54px;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 8px;
+      background: #151B28;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 6px;
+      transition: transform 0.28s ease, background 0.28s ease, border-color 0.28s ease;
+    }
+
+    .software-item:hover .software-icon {
+      transform: scale(1.12);
+      background: #1F283C;
+      border-color: var(--green);
+    }
+
+    .software-icon img {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .software-icon i {
+      font-size: 42px;
+      line-height: 1;
+      display: block;
+    }
+
+    .software-icon svg {
+      width: 42px;
+      height: 42px;
+      display: block;
+    }
+
+    .software-name {
+      font-family: var(--font-display);
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 2px;
+      line-height: 1.2;
+    }
+
+    .software-sub {
+      font-family: var(--font-mono);
+      font-size: 9.5px;
+      font-weight: 600;
+      color: var(--yellow);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Coding progress bars */
+    .coding-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .coding-item {
+      display: grid;
+      grid-template-columns: 120px 1fr 45px;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .coding-label {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--black);
+    }
+
+    .coding-bar {
+      height: 10px;
+      background: #0B101C;
+      border-radius: 99px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .coding-fill {
+      height: 100%;
+      border-radius: 99px;
+      width: 0%;
+      transition: width 1.4s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .coding-fill.green {
+      background: linear-gradient(90deg, var(--green), var(--green-light));
+    }
+
+    .coding-fill.orange {
+      background: linear-gradient(90deg, var(--orange), var(--orange-light));
+    }
+
+    .coding-fill.yellow {
+      background: linear-gradient(90deg, var(--yellow), var(--yellow-light));
+    }
+
+    .coding-fill.dark {
+      background: #2c3e50;
+    }
+
+    .coding-percent {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--green-dark);
+      text-align: right;
+    }
+
+    /* ============ FEATURED PROJECTS ============ */
+    .projects-section {
+      padding: 100px 0;
+      background: var(--cream);
+      position: relative;
+    }
+
+    .projects-filter-bar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 3.5rem;
+    }
+
+    .project-filter-btn {
+      padding: 8px 20px;
+      border-radius: var(--radius-pill);
+      background: var(--cream-card);
+      border: 1.5px solid var(--border);
+      color: var(--gray);
+      font-family: var(--font-mono);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .project-filter-btn:hover {
+      border-color: var(--green);
+      color: var(--green-light);
+      transform: translateY(-2px);
+    }
+
+    .project-filter-btn.active {
+      background: rgba(56, 189, 248, 0.15);
+      border-color: var(--green);
+      color: var(--green);
+      box-shadow: 0 0 15px rgba(56, 189, 248, 0.25);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.5rem;
+    }
+
+    .project-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg), 0 0 30px rgba(56, 189, 248, 0.15);
+      border-color: var(--border-accent);
+    }
+
+    .project-img-wrapper {
+      position: relative;
+      width: 100%;
+      height: 250px;
+      overflow: hidden;
+      background: #060910;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer;
+    }
+
+    .project-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      display: block;
+    }
+
+    .project-card:hover .project-img-wrapper img {
+      transform: scale(1.05);
+    }
+
+    .project-badge-tag {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(10, 13, 20, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border-accent);
+      color: var(--green-light);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: var(--radius-pill);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      z-index: 2;
+    }
+
+    .project-badge-tag .badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 8px var(--green);
+    }
+
+    .project-body {
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .project-cat {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      color: var(--yellow);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+
+    .project-title {
+      font-family: var(--font-display);
+      font-size: 1.38rem;
+      color: var(--green-dark);
+      margin-bottom: 12px;
+      line-height: 1.35;
+    }
+
+    .project-desc {
+      font-size: 13.5px;
+      color: var(--gray);
+      line-height: 1.65;
+      margin-bottom: 1.25rem;
+      flex: 1;
+    }
+
+    .project-tech-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 1.5rem;
+    }
+
+    .project-tech-pill {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+      color: #CBD5E1;
+    }
+
+    .project-tech-pill.highlight {
+      background: rgba(56, 189, 248, 0.1);
+      border-color: rgba(56, 189, 248, 0.3);
+      color: var(--green-light);
+    }
+
+    .project-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-top: 14px;
+      border-top: 1px dashed var(--border);
+    }
+
+    .btn-project-preview {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: linear-gradient(135deg, var(--green), #0284C7);
+      color: #0A0D14;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 8px 16px;
+      border-radius: var(--radius-pill);
+      text-decoration: none;
+      transition: var(--transition);
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-project-preview:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
+      color: #0A0D14;
+    }
+
+    .btn-project-code {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--cream-card);
+      border: 1.5px solid var(--border);
+      color: var(--black);
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 7px 14px;
+      border-radius: var(--radius-pill);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .btn-project-code:hover {
+      border-color: var(--green);
+      color: var(--green);
+      transform: translateY(-2px);
+    }
+
+    /* Project Modal / Lightbox */
+    .project-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(10, 13, 20, 0.88);
+      backdrop-filter: blur(14px);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .project-modal-backdrop.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .project-modal-box {
+      background: var(--cream-card);
+      border: 1.5px solid var(--border-accent);
+      border-radius: var(--radius-lg);
+      max-width: 860px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: var(--shadow-lg), 0 0 50px rgba(56, 189, 248, 0.2);
+      position: relative;
+      transform: scale(0.92);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .project-modal-backdrop.active .project-modal-box {
+      transform: scale(1);
+    }
+
+    .project-modal-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(15, 20, 31, 0.9);
+      border: 1px solid var(--border);
+      color: var(--green-dark);
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+      transition: var(--transition);
+    }
+
+    .project-modal-close:hover {
+      background: var(--green);
+      color: #0A0D14;
+      transform: rotate(90deg);
+    }
+
+    .project-modal-img {
+      width: 100%;
+      max-height: 420px;
+      object-fit: cover;
+      object-position: top;
+      border-bottom: 1px solid var(--border);
+      display: block;
+    }
+
+    .project-modal-content {
+      padding: 28px;
+    }
+
+    .project-modal-cat {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--yellow);
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .project-modal-title {
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      color: var(--green-dark);
+      margin-bottom: 14px;
+    }
+
+    .project-modal-desc {
+      font-size: 14px;
+      color: var(--gray);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .project-modal-meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      margin-bottom: 1.5rem;
+    }
+
+    .project-modal-meta h5 {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--gray);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .project-modal-meta p {
+      font-size: 13.5px;
+      color: var(--green-light);
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 900px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+      .project-img-wrapper {
+        height: 220px;
+      }
+    }
+
+    /* ============ SERVICES / LAYANAN ============ */
+    .services-section {
+      padding: 100px 0;
+      background: var(--cream-dark);
+      border-top: 1px solid var(--border);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.75rem;
+    }
+
+    .service-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px 26px;
+      position: relative;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg), 0 0 20px rgba(56, 189, 248, 0.15);
+      border-color: var(--green);
+    }
+
+    .service-num {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--yellow);
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.2);
+      padding: 2px 10px;
+      border-radius: var(--radius-pill);
+      align-self: flex-start;
+      margin-bottom: 1.25rem;
+    }
+
+    .service-icon-wrap {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .service-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      color: var(--green-dark);
+      margin-bottom: 0.75rem;
+    }
+
+    .service-card p {
+      font-size: 13.5px;
+      color: var(--gray);
+      line-height: 1.65;
+      flex: 1;
+    }
+
+    .service-arrow {
+      margin-top: 1.5rem;
+      font-size: 1.25rem;
+      color: var(--green);
+      font-weight: bold;
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover .service-arrow {
+      transform: translateX(6px);
+      color: var(--yellow);
+    }
+
+    /* ============ STATS COUNTER ============ */
+    .stats-section {
+      padding: 60px 0;
+      background: #07090F;
+      color: var(--black);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .stat-item {
+      padding: 10px;
+    }
+
+    .stat-number {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 5vw, 3.8rem);
+      font-weight: 900;
+      color: var(--yellow);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat-label {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gray);
+    }
+
+    /* ============ LANGUAGES & HOBBIES ============ */
+    .extras-section {
+      padding: 90px 0;
+      background: var(--cream);
+    }
+
+    .extras-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+
+    .lang-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .lang-item {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .lang-item h4 {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      color: var(--green-dark);
+    }
+
+    .lang-item p {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--green);
+      background: rgba(56, 189, 248, 0.12);
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+    }
+
+    .hobbies-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .hobby-item {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 16px 12px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      color: var(--gray);
+    }
+
+    .hobby-item:hover {
+      background: var(--green);
+      color: #0A0D14;
+      border-color: var(--green);
+      transform: translateY(-3px);
+    }
+
+    .hobby-icon {
+      font-size: 1.6rem;
+    }
+
+    .hobby-item span:last-child {
+      font-size: 12.5px;
+      font-weight: 600;
+    }
+
+    /* ============ CONTACT SECTION ============ */
+    .contact-section {
+      padding: 100px 0;
+      background: var(--cream-dark);
+      border-top: 1px solid var(--border);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: flex-start;
+    }
+
+    .contact-left h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      line-height: 1.05;
+      color: var(--green-dark);
+      margin-bottom: 1.25rem;
+    }
+
+    .contact-left p {
+      font-size: 1.05rem;
+      color: var(--gray);
+      line-height: 1.75;
+      margin-bottom: 2rem;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact-detail-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: var(--white);
+      padding: 14px 20px;
+      border-radius: var(--radius-md);
+      border: 1.5px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .contact-detail-icon {
+      font-size: 1.4rem;
+    }
+
+    .contact-detail-item h4 {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      color: var(--green-dark);
+    }
+
+    .contact-detail-item p {
+      font-size: 13px;
+      color: var(--gray);
+      margin-bottom: 0;
+    }
+
+    .social-row {
+      display: flex;
+      gap: 12px;
+    }
+
+    .social-circle {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      text-decoration: none;
+    }
+
+    .social-circle svg {
+      width: 24px;
+      height: 24px;
+      transition: transform 0.25s ease;
+      display: block;
+    }
+
+    .social-circle:hover {
+      border-color: var(--green);
+      background: #1C2436;
+      transform: translateY(-4px);
+      box-shadow: 0 8px 18px rgba(56, 189, 248, 0.25);
+    }
+
+    .social-circle:hover svg {
+      transform: scale(1.15);
+    }
+
+    /* ============ CONTACT QUOTE CARD ============ */
+    .contact-quote-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 44px 38px 36px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 400px;
+    }
+
+    .quote-watermark {
+      position: absolute;
+      top: -24px;
+      right: 18px;
+      font-family: var(--font-display);
+      font-size: 10rem;
+      line-height: 1;
+      color: rgba(56, 189, 248, 0.08);
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .quote-badge-top {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      color: #0A0D14;
+      background: var(--yellow);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      margin-bottom: 1.5rem;
+      width: fit-content;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .quote-text-main {
+      font-family: var(--font-display);
+      font-size: clamp(1.35rem, 2.2vw, 1.7rem);
+      font-style: italic;
+      color: var(--green-dark);
+      line-height: 1.45;
+      margin-bottom: 2rem;
+      position: relative;
+      z-index: 2;
+      transition: opacity 0.3s ease;
+    }
+
+    .quote-author-wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding-top: 1.5rem;
+      border-top: 1px dashed var(--border);
+      position: relative;
+      z-index: 2;
+    }
+
+    .quote-author-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 2px solid var(--green);
+      object-fit: cover;
+      box-shadow: var(--shadow-sm);
+      flex-shrink: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .quote-author-info h4 {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      color: var(--green-dark);
+      margin-bottom: 2px;
+    }
+
+    .quote-author-info p {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--green);
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+
+    .quote-tags-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 1.5rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .quote-tag-pill {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      background: var(--cream);
+      border: 1px solid var(--border);
+      color: var(--green);
+      padding: 4px 12px;
+      border-radius: var(--radius-pill);
+      font-weight: 600;
+    }
+
+    .btn-shuffle-quote {
+      margin-top: 1.5rem;
+      padding: 9px 18px;
+      background: var(--cream);
+      border: 1.5px solid var(--green);
+      border-radius: var(--radius-pill);
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--green);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      transition: all 0.25s ease;
+      position: relative;
+      z-index: 2;
+    }
+
+    .btn-shuffle-quote:hover {
+      background: var(--green);
+      color: #0A0D14;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(56, 189, 248, 0.3);
+    }
+
+    /* ============ FOOTER ============ */
+    .footer {
+      background: #06080E;
+      color: var(--gray);
+      padding: 70px 0 30px;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 3rem;
+      padding-bottom: 50px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .footer-logo {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .footer-brand p {
+      font-size: 13.5px;
+      color: var(--gray);
+      line-height: 1.7;
+      max-width: 320px;
+    }
+
+    .footer-column h4 {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--yellow);
+      margin-bottom: 16px;
+    }
+
+    .footer-column a {
+      display: block;
+      font-size: 13.5px;
+      color: var(--gray);
+      margin-bottom: 10px;
+      transition: var(--transition);
+    }
+
+    .footer-column a:hover {
+      color: var(--green);
+      transform: translateX(4px);
+    }
+
+    .footer-bottom {
+      padding-top: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #64748B;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .back-to-top {
+      color: var(--green);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .back-to-top:hover {
+      color: var(--yellow);
+    }
+
+    /* ============ FLOATING WHATSAPP BUTTON ============ */
+    .wa-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #25D366;
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: var(--radius-pill);
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+      z-index: 999;
+      font-weight: 700;
+      font-size: 13px;
+      transition: var(--transition);
+    }
+
+    .wa-float:hover {
+      background: #1eb956;
+      transform: translateY(-4px) scale(1.04);
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5);
+    }
+
+    .wa-float svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    /* ============ RESPONSIVE BREAKPOINTS ============ */
+    @media (max-width: 1024px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        text-align: center;
+      }
+
+      .hero-left {
+        order: 2;
+      }
+
+      .hero-right {
+        order: 1;
+        align-items: center;
+      }
+
+      .hero-desc {
+        margin: 0 auto;
+      }
+
+      .hero-socials {
+        justify-content: center;
+      }
+
+      .hero-eyebrow {
+        align-self: center;
+      }
+
+      .hero-quote {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin: 1.5rem auto 0;
+      }
+
+      .about-grid,
+      .resume-grid,
+      .skills-grid,
+      .extras-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-toggle {
+        display: flex;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 340px;
+        height: 100vh;
+        background: var(--cream);
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 40px;
+        gap: 1.5rem;
+        transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+        z-index: 1001;
+        border-left: 2px solid var(--green);
+      }
+
+      .nav-links.open {
+        right: 0;
+      }
+
+      .nav-links a {
+        font-size: 1.25rem;
+        font-family: var(--font-display);
+        color: var(--black);
+      }
+
+      .nav-links a:hover {
+        color: var(--green);
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hobbies-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-content {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 18px;
+      }
+
+      .hero-img-box img {
+        height: 380px;
+      }
+
+      .coding-item {
+        grid-template-columns: 95px 1fr 38px;
+        font-size: 12px;
+      }
+
+      .wa-float {
+        bottom: 16px;
+        right: 16px;
+        padding: 8px 14px;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-name">
+      <span class="sparkle">✦</span> Rafael.
+    </div>
+    <div class="preloader-bar">
+      <div class="preloader-fill"></div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="sparkle">✦</span> Rafael.Dev
+      </a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About me</a>
+        <a href="#resume">Resume</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#contact" class="nav-cta">Get in touch ↗</a>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section class="hero" id="home">
+    <div class="hero-bg-text">
+      <div>PORTOFOLIO</div>
+      <div>PORTOFOLIO</div>
+    </div>
+
+    <span class="hero-stars">✦</span>
+    <span class="hero-stars-2">✦</span>
+
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Left Image / Illustration -->
+        <div class="hero-left">
+          <div class="hero-image-wrapper">
+            <span class="hero-badge-tag">
+              <span>●</span> RPL @ SMKN 2 KRA
+            </span>
+            <div class="hero-img-box">
+              <img src="pict.jpeg" alt="Rafael Latief Faustine" id="hero-img">
+            </div>
+            <div class="hero-image-frame"></div>
+            <div class="hero-quote">
+              Saya suka membangun hal-hal yang bermanfaat di dunia digital. Memecahkan masalah secara pragmatis dan
+              menciptakan solusi yang sederhana & fungsional.
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Copy -->
+        <div class="hero-right">
+          <div class="hero-eyebrow">
+            <span class="sparkle">✦</span> Junior Web Developer & AI Learner
+          </div>
+
+          <h1 class="hero-title">
+            PORT<span class="highlight">FOLIO</span>
+          </h1>
+
+          <p class="hero-desc">
+            Halo! Saya <strong>Rafael Latief Faustine</strong>, pelajar Rekayasa Perangkat Lunak (RPL) di SMKN 2
+            Karanganyar. Sedang aktif membangun fondasi web modern, logika backend, dan melangkah menuju <em>Full-Stack
+              & AI Engineering</em>.
+          </p>
+
+          <div class="hero-socials">
+            <!-- GitHub -->
+            <a href="https://github.com/rafaelfaustine45-collab" target="_blank" rel="noopener noreferrer"
+              class="hero-social-link" title="GitHub Profile">
+              <span class="social-icon-box">
+                <svg viewBox="0 0 24 24" fill="#24292E">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                </svg>
+              </span>
+              GitHub
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/rafafaustine" target="_blank" rel="noopener noreferrer"
+              class="hero-social-link" title="Instagram Profile">
+              <span class="social-icon-box">
+                <svg viewBox="0 0 24 24">
+                  <defs>
+                    <radialGradient id="igHeroGrad" cx="0.2" cy="1" r="1">
+                      <stop offset="0%" stop-color="#FFDD55" />
+                      <stop offset="20%" stop-color="#FF543E" />
+                      <stop offset="60%" stop-color="#C837AB" />
+                      <stop offset="100%" stop-color="#3771C8" />
+                    </radialGradient>
+                  </defs>
+                  <rect width="24" height="24" rx="6" fill="url(#igHeroGrad)" />
+                  <path
+                    d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-8.6a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0zm1.8 1.9c-.1-1.3-.4-2.4-1.3-3.3s-2-1.2-3.3-1.3c-1.3-.1-5.3-.1-6.6 0-1.3.1-2.4.4-3.3 1.3S3.3 7.2 3.2 8.5c-.1 1.3-.1 5.3 0 6.6.1 1.3.4 2.4 1.3 3.3s2 1.2 3.3 1.3c1.3.1 5.3.1 6.6 0 1.3-.1 2.4-.4 3.3-1.3s1.2-2 1.3-3.3c.1-1.3.1-5.3 0-6.6zM17 19H7a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3z"
+                    fill="#ffffff" />
+                </svg>
+              </span>
+              Instagram
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@rafaelfaustine" target="_blank" rel="noopener noreferrer"
+              class="hero-social-link" title="TikTok Profile">
+              <span class="social-icon-box">
+                <svg viewBox="0 0 24 24" fill="#010101">
+                  <path
+                    d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.86.12V9.42a6.34 6.34 0 0 0-1-.08A6.33 6.33 0 0 0 3 15.67a6.34 6.34 0 0 0 10.82 4.48c.38-.38.71-.8.97-1.26V9.06a8.16 8.16 0 0 0 4.8 1.55v-3.45a4.85 4.85 0 0 1-.22-.47z" />
+                </svg>
+              </span>
+              TikTok
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/6281280759980" target="_blank" rel="noopener noreferrer" class="hero-social-link"
+              title="Chat WhatsApp">
+              <span class="social-icon-box">
+                <svg viewBox="0 0 24 24" fill="#25D366">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+              </span>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INFINITE MARQUEE ============ -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-item"><span class="dot"></span> Web Development</div>
+      <div class="marquee-item"><span class="dot"></span> Front-End & UI/UX</div>
+      <div class="marquee-item"><span class="dot"></span> SMKN 2 Karanganyar</div>
+      <div class="marquee-item"><span class="dot"></span> PHP & Laravel</div>
+      <div class="marquee-item"><span class="dot"></span> JavaScript Modern</div>
+      <div class="marquee-item"><span class="dot"></span> AI Engineering Aspirant</div>
+      <div class="marquee-item"><span class="dot"></span> Clean & Scalable Code</div>
+      <div class="marquee-item"><span class="dot"></span> Full-Stack Mindset</div>
+      <!-- Duplicate for smooth infinite loop -->
+      <div class="marquee-item"><span class="dot"></span> Web Development</div>
+      <div class="marquee-item"><span class="dot"></span> Front-End & UI/UX</div>
+      <div class="marquee-item"><span class="dot"></span> SMKN 2 Karanganyar</div>
+      <div class="marquee-item"><span class="dot"></span> PHP & Laravel</div>
+      <div class="marquee-item"><span class="dot"></span> JavaScript Modern</div>
+      <div class="marquee-item"><span class="dot"></span> AI Engineering Aspirant</div>
+      <div class="marquee-item"><span class="dot"></span> Clean & Scalable Code</div>
+      <div class="marquee-item"><span class="dot"></span> Full-Stack Mindset</div>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT SECTION ============ -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Left Text -->
+        <div>
+          <h2 class="about-hello">
+            Hello,<br>I'm <span class="name-highlight">Rafael</span> !
+          </h2>
+          <p class="about-text">
+            Saya adalah pelajar <strong>Rekayasa Perangkat Lunak (RPL)</strong> di <strong>SMKN 2 Karanganyar</strong>,
+            Jawa Tengah. Saya memiliki antusiasme tinggi dalam membangun antarmuka web yang rapi, responsif, dan
+            interaktif.
+          </p>
+          <p class="about-text">
+            Bagi saya, belajar pemrograman bukan sekadar menghafal sintaks, melainkan seni memecahkan masalah nyata dan
+            merancang sesuatu yang benar-benar berguna bagi pengguna.
+          </p>
+          <a href="#contact" class="about-link">
+            <span>🔍</span> rafaellatieffaustine.dev
+          </a>
+        </div>
+
+        <!-- Right Photo + Info Badges -->
+        <div class="about-photo-wrapper">
+          <div class="about-photo-box">
+            <img src="pict.jpeg" alt="Rafael Latief Faustine">
+            <div class="about-badge">🎂 02 Mei 2010</div>
+            <div class="about-badge-bottom">💻 RPL Student</div>
+          </div>
+          <div class="contact-card-box">
+            <h4>Profile Info</h4>
+            <p>📍 Karanganyar, Jawa Tengah</p>
+            <p>🏫 SMKN 2 Karanganyar</p>
+            <p>🎯 Full-Stack Web & AI</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESUME: EDUCATION & JOURNEY ============ -->
+  <section class="resume-section" id="resume">
+    <div class="container">
+      <div class="resume-grid">
+
+        <!-- Education -->
+        <div>
+          <h2 class="section-label">Education</h2>
+          <div class="timeline">
+            <!-- 1. SMKN 2 Karanganyar -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">Sekarang (Lanjutan)</div>
+              <div class="timeline-title">SMKN 2 Karanganyar</div>
+              <div class="timeline-subtitle">✦ Rekayasa Perangkat Lunak (RPL) · Karanganyar</div>
+              <div class="timeline-desc">Melanjutkan pendidikan kejuruan di SMKN 2 Karanganyar pada kompetensi keahlian
+                Rekayasa Perangkat Lunak (RPL). Aktif mendalami arsitektur web modern, logika pemrograman, database, dan
+                persiapan menuju Full-Stack & AI Engineering.</div>
+            </div>
+
+            <!-- 2. SMKN 5 Manado -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">1 Tahun (Tingkat Awal SMK)</div>
+              <div class="timeline-title">SMKN 5 Manado</div>
+              <div class="timeline-subtitle">✦ Sekolah Menengah Kejuruan · Manado</div>
+              <div class="timeline-desc">Menempuh 1 tahun pendidikan kejuruan di SMKN 5 Manado, Sulawesi Utara.
+                Memperluas adaptabilitas antarwilayah, budaya belajar mandiri, dan fondasi vokasi keteknikan.</div>
+            </div>
+
+            <!-- 3. SMPN 2 Kalawat -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">2 Tahun (Tingkat Akhir SMP)</div>
+              <div class="timeline-title">SMPN 2 Kalawat</div>
+              <div class="timeline-subtitle">✦ Sekolah Menengah Pertama · Minahasa Utara</div>
+              <div class="timeline-desc">Menempuh 2 tahun pendidikan lanjutan di SMPN 2 Kalawat, Minahasa Utara hingga kelulusan jenjang menengah pertama. Mengasah kemandirian, daya adaptasi antarwilayah, dan memperkuat minat di bidang teknologi.</div>
+            </div>
+
+            <!-- 4. SMPN 2 Karangpandan -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">1 Tahun (Tingkat Awal SMP)</div>
+              <div class="timeline-title">SMPN 2 Karangpandan</div>
+              <div class="timeline-subtitle">✦ Sekolah Menengah Pertama · Karanganyar</div>
+              <div class="timeline-desc">Menempuh 1 tahun masa awal pendidikan jenjang menengah pertama di SMPN 2 Karangpandan, membangun fondasi akademis dan kedisiplinan sebelum melanjutkan studi.</div>
+            </div>
+
+            <!-- 5. SDN 2 Harjosari -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">6 Tahun (Pendidikan Dasar)</div>
+              <div class="timeline-title">SDN 2 Harjosari</div>
+              <div class="timeline-subtitle">✦ Pendidikan Dasar · Karanganyar</div>
+              <div class="timeline-desc">Menyelesaikan 6 tahun masa pendidikan dasar di SDN 2 Harjosari dengan tekun,
+                membangun rasa ingin tahu yang tinggi, kedisiplinan, dan ketertarikan pertama pada sains.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Journey & Soft Skills -->
+        <div>
+          <h2 class="section-label">Learning Journey</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">2026</div>
+              <div class="timeline-title">Full-Stack & AI Engineering</div>
+              <div class="timeline-desc">Fokus memperdalam integrasi backend, API, dan mengeksplorasi kecerdasan buatan
+                dalam pengembangan web.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">2025</div>
+              <div class="timeline-title">PHP Ecosystem & Web Apps</div>
+              <div class="timeline-desc">Membangun aplikasi web dinamis dengan PHP, MySQL, dan konsep MVC modern.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">2024</div>
+              <div class="timeline-title">Foundations of Web</div>
+              <div class="timeline-desc">Memulai langkah pertama dengan HTML5 semantic, styling CSS responsif, dan dasar
+                interaktivitas JavaScript.</div>
+            </div>
+          </div>
+
+          <h3 class="soft-skills-title">Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">#Creativity</span>
+            <span class="skill-tag">#ProblemSolving</span>
+            <span class="skill-tag">#Curiosity</span>
+            <span class="skill-tag">#DetailOriented</span>
+            <span class="skill-tag">#Adaptability</span>
+            <span class="skill-tag">#Teamwork</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TECHNICAL SKILLS ============ -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <div class="section-header-center">
+        <h2>Technical Skills</h2>
+        <p>Tools dan teknologi yang saya gunakan dalam membangun project digital</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Software / Tools -->
+        <div class="skill-box-card">
+          <h3>Software & Tools</h3>
+          <div class="software-grid">
+            <!-- 1. VS Code -->
+            <div class="software-item" title="Visual Studio Code">
+              <div class="software-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
+                  alt="VS Code" loading="lazy">
+              </div>
+              <span class="software-name">VS Code</span>
+              <span class="software-sub">Code Editor</span>
+            </div>
+
+            <!-- 2. Git -->
+            <div class="software-item" title="Git Version Control">
+              <div class="software-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git"
+                  loading="lazy">
+              </div>
+              <span class="software-name">Git SCM</span>
+              <span class="software-sub">Version Control</span>
+            </div>
+
+            <!-- 3. GitHub -->
+            <div class="software-item" title="GitHub Repository">
+              <div class="software-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                  alt="GitHub" loading="lazy">
+              </div>
+              <span class="software-name">GitHub</span>
+              <span class="software-sub">Repository</span>
+            </div>
+
+            <!-- 4. Figma -->
+            <div class="software-item" title="Figma UI/UX Design">
+              <div class="software-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+                  alt="Figma" loading="lazy">
+              </div>
+              <span class="software-name">Figma</span>
+              <span class="software-sub">UI/UX Design</span>
+            </div>
+
+            <!-- 5. HTML5 -->
+            <div class="software-item" title="HTML5 Semantic Markup">
+              <div class="software-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                  alt="HTML5" loading="lazy">
+              </div>
+              <span class="software-name">HTML5</span>
+              <span class="software-sub">Web Markup</span>
+            </div>
+
+            <!-- 6. CSS3 -->
+            <div class="software-item" title="CSS3 Modern Styling">
+              <div class="software-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3"
+                  loading="lazy">
+              </div>
+              <span class="software-name">CSS3</span>
+              <span class="software-sub">Modern Styles</span>
+            </div>
+
+            <!-- 7. JavaScript -->
+            <div class="software-item" title="JavaScript Modern (ES6+)">
+              <div class="software-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                  alt="JavaScript" loading="lazy">
+              </div>
+              <span class="software-name">JavaScript</span>
+              <span class="software-sub">Frontend Logic</span>
+            </div>
+
+            <!-- 8. PHP -->
+            <div class="software-item" title="PHP Web Backend">
+              <div class="software-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP"
+                  loading="lazy">
+              </div>
+              <span class="software-name">PHP</span>
+              <span class="software-sub">Backend Server</span>
+            </div>
+
+            <!-- 9. Python -->
+            <div class="software-item" title="Python & AI Exploration">
+              <div class="software-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                  alt="Python" loading="lazy">
+              </div>
+              <span class="software-name">Python</span>
+              <span class="software-sub">Logic & AI</span>
+            </div>
+
+            <!-- 10. MySQL -->
+            <div class="software-item" title="MySQL Database">
+              <div class="software-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                  alt="MySQL" loading="lazy">
+              </div>
+              <span class="software-name">MySQL</span>
+              <span class="software-sub">Database</span>
+            </div>
+
+            <!-- 11. Chrome DevTools -->
+            <div class="software-item" title="Chrome DevTools Debugger">
+              <div class="software-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chrome/chrome-original.svg"
+                  alt="Chrome DevTools" loading="lazy">
+              </div>
+              <span class="software-name">DevTools</span>
+              <span class="software-sub">Debugging</span>
+            </div>
+
+            <!-- 12. Terminal & Bash -->
+            <div class="software-item" title="Terminal & Bash CLI">
+              <div class="software-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg"
+                  alt="Terminal" loading="lazy">
+              </div>
+              <span class="software-name">Terminal</span>
+              <span class="software-sub">Command Line</span>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">Figma UI/UX</span>
+            <span class="skill-tag">XAMPP / Laragon</span>
+            <span class="skill-tag">Chrome DevTools</span>
+            <span class="skill-tag">Linux / Terminal</span>
+            <span class="skill-tag">Vercel & Netlify</span>
+          </div>
+        </div>
+
+        <!-- Coding Skills with Progress Bars -->
+        <div class="skill-box-card">
+          <h3>Coding Skills</h3>
+          <div class="coding-list" id="coding-list">
+            <div class="coding-item">
+              <span class="coding-label">HTML5 & CSS3</span>
+              <div class="coding-bar">
+                <div class="coding-fill green" data-width="92%"></div>
+              </div>
+              <span class="coding-percent">92%</span>
+            </div>
+            <div class="coding-item">
+              <span class="coding-label">JavaScript</span>
+              <div class="coding-bar">
+                <div class="coding-fill orange" data-width="85%"></div>
+              </div>
+              <span class="coding-percent">85%</span>
+            </div>
+            <div class="coding-item">
+              <span class="coding-label">PHP & Backend</span>
+              <div class="coding-bar">
+                <div class="coding-fill green" data-width="75%"></div>
+              </div>
+              <span class="coding-percent">75%</span>
+            </div>
+            <div class="coding-item">
+              <span class="coding-label">UI/UX Design</span>
+              <div class="coding-bar">
+                <div class="coding-fill yellow" data-width="80%"></div>
+              </div>
+              <span class="coding-percent">80%</span>
+            </div>
+            <div class="coding-item">
+              <span class="coding-label">MySQL Database</span>
+              <div class="coding-bar">
+                <div class="coding-fill dark" data-width="70%"></div>
+              </div>
+              <span class="coding-percent">70%</span>
+            </div>
+            <div class="coding-item">
+              <span class="coding-label">Python & AI</span>
+              <div class="coding-bar">
+                <div class="coding-fill yellow" data-width="60%"></div>
+              </div>
+              <span class="coding-percent">60%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED PROJECTS ============ -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="section-header-center">
+        <h2>Featured Projects</h2>
+        <p>Aplikasi web dan sistem nyata yang saya rancang serta kembangkan dengan arsitektur bersih dan fungsional</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="projects-filter-bar">
+        <button type="button" class="project-filter-btn active" data-filter="all">Semua Proyek (4)</button>
+        <button type="button" class="project-filter-btn" data-filter="php">Native PHP</button>
+        <button type="button" class="project-filter-btn" data-filter="ci">CodeIgniter 3</button>
+        <button type="button" class="project-filter-btn" data-filter="tailwind">Tailwind CSS</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- 1. YOUTHKRA -->
+        <article class="project-card" data-category="php tailwind">
+          <div class="project-img-wrapper js-open-project" data-id="youthkra">
+            <span class="project-badge-tag">
+              <span class="badge-dot"></span> Community Platform
+            </span>
+            <img src="project-youthkra.png" alt="Platform YOUTHKRA" onerror="this.src='https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1000&q=80'">
+          </div>
+          <div class="project-body">
+            <span class="project-cat">Youth Ecosystem & Platform</span>
+            <h3 class="project-title">YOUTHKRA — Platform Kolaborasi Pemuda</h3>
+            <p class="project-desc">
+              Platform terintegrasi bagi pemuda Karanganyar dengan antarmuka modern dark theme. Menghadirkan pelacakan progres belajar mandiri, portofolio karya, e-sertifikat, jejaring komunitas, dan kalender event pemuda.
+            </p>
+            <div class="project-tech-pills">
+              <span class="project-tech-pill highlight">Native PHP</span>
+              <span class="project-tech-pill highlight">Tailwind CSS</span>
+              <span class="project-tech-pill">JavaScript</span>
+              <span class="project-tech-pill">MySQL</span>
+              <span class="project-tech-pill">Dark Mode UI</span>
+            </div>
+            <div class="project-actions">
+              <button type="button" class="btn-project-preview js-open-project" data-id="youthkra">
+                <span>Pratinjau Layar</span> <span>↗</span>
+              </button>
+              <a href="https://github.com/rafaelfaustine45-collab" target="_blank" rel="noopener noreferrer" class="btn-project-code">
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Kas Karang Taruna Melati Putih -->
+        <article class="project-card" data-category="php">
+          <div class="project-img-wrapper js-open-project" data-id="karangtaruna">
+            <span class="project-badge-tag">
+              <span class="badge-dot"></span> Organization System
+            </span>
+            <img src="project-karangtaruna.png" alt="Kas Karang Taruna Melati Putih" onerror="this.src='https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1000&q=80'">
+          </div>
+          <div class="project-body">
+            <span class="project-cat">Internal Financial Management</span>
+            <h3 class="project-title">Portal & Kas Karang Taruna "Melati Putih"</h3>
+            <p class="project-desc">
+              Sistem manajemen kas dan transparansi keuangan Karang Taruna Melati Putih RT 05 / RW 02. Dilengkapi buku kas real-time, pencatatan transaksi iuran warga, rekapitulasi & ekspor cetak LPJ / Excel, serta agenda kegiatan.
+            </p>
+            <div class="project-tech-pills">
+              <span class="project-tech-pill highlight">Native PHP</span>
+              <span class="project-tech-pill">CSS3 Modern</span>
+              <span class="project-tech-pill">JavaScript</span>
+              <span class="project-tech-pill">MySQL</span>
+              <span class="project-tech-pill">Ekspor LPJ</span>
+            </div>
+            <div class="project-actions">
+              <button type="button" class="btn-project-preview js-open-project" data-id="karangtaruna">
+                <span>Pratinjau Layar</span> <span>↗</span>
+              </button>
+              <a href="https://github.com/rafaelfaustine45-collab" target="_blank" rel="noopener noreferrer" class="btn-project-code">
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Web PPDB SMK Bhina Karya Karanganyar -->
+        <article class="project-card" data-category="php">
+          <div class="project-img-wrapper js-open-project" data-id="ppdb">
+            <span class="project-badge-tag">
+              <span class="badge-dot"></span> School Admission System
+            </span>
+            <img src="project-ppdb.png" alt="Web PPDB SMK Bhina Karya" onerror="this.src='https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1000&q=80'">
+          </div>
+          <div class="project-body">
+            <span class="project-cat">Institutional Web & PPDB</span>
+            <h3 class="project-title">Web PPDB SMK Bhina Karya Karanganyar</h3>
+            <p class="project-desc">
+              Portal institusi sekolah dan sistem Penerimaan Peserta Didik Baru (PPDB / SPMB Online). Dilengkapi formulir registrasi calon siswa baru, cek status seleksi mandiri, katalog jurusan keahlian, dan informasi Bursa Kerja Khusus (BKK).
+            </p>
+            <div class="project-tech-pills">
+              <span class="project-tech-pill highlight">Native PHP</span>
+              <span class="project-tech-pill">HTML5</span>
+              <span class="project-tech-pill">CSS3</span>
+              <span class="project-tech-pill">JavaScript</span>
+              <span class="project-tech-pill highlight">Bootstrap 5</span>
+            </div>
+            <div class="project-actions">
+              <button type="button" class="btn-project-preview js-open-project" data-id="ppdb">
+                <span>Pratinjau Layar</span> <span>↗</span>
+              </button>
+              <a href="https://github.com/rafaelfaustine45-collab" target="_blank" rel="noopener noreferrer" class="btn-project-code">
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Kas Toko Retail CI3 -->
+        <article class="project-card" data-category="ci">
+          <div class="project-img-wrapper js-open-project" data-id="kasbuku">
+            <span class="project-badge-tag">
+              <span class="badge-dot"></span> Cash Flow & Multi-User
+            </span>
+            <img src="project-kasbuku.png" alt="Sistem Kas Toko Retail" onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80'">
+          </div>
+          <div class="project-body">
+            <span class="project-cat">Financial Dashboard & Bookkeeping</span>
+            <h3 class="project-title">Sistem Buku Kas & Keuangan Toko (Retail)</h3>
+            <p class="project-desc">
+              Aplikasi pembukuan dan kas harian/bulanan berbasis framework MVC CodeIgniter 3. Memudahkan pencatatan cash flow harian, analisis pemasukan dan pengeluaran, saldo akhir real-time, serta sistem autentikasi multi-level user.
+            </p>
+            <div class="project-tech-pills">
+              <span class="project-tech-pill highlight">CodeIgniter 3</span>
+              <span class="project-tech-pill highlight">PHP MVC</span>
+              <span class="project-tech-pill">Bootstrap</span>
+              <span class="project-tech-pill">MySQL</span>
+              <span class="project-tech-pill">Laporan Harian</span>
+            </div>
+            <div class="project-actions">
+              <button type="button" class="btn-project-preview js-open-project" data-id="kasbuku">
+                <span>Pratinjau Layar</span> <span>↗</span>
+              </button>
+              <a href="https://github.com/rafaelfaustine45-collab" target="_blank" rel="noopener noreferrer" class="btn-project-code">
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Lightbox Modal -->
+  <div class="project-modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-label="Detail Proyek">
+    <div class="project-modal-box">
+      <button type="button" class="project-modal-close" id="modal-close-btn" aria-label="Tutup Detail">✕</button>
+      <img src="" alt="" class="project-modal-img" id="modal-img">
+      <div class="project-modal-content">
+        <div class="project-modal-cat" id="modal-cat">Kategori</div>
+        <h3 class="project-modal-title" id="modal-title">Judul Proyek</h3>
+        <p class="project-modal-desc" id="modal-desc">Deskripsi detail proyek.</p>
+        
+        <div class="project-modal-meta">
+          <div>
+            <h5>Teknologi Utama</h5>
+            <p id="modal-tech">PHP, MySQL, CSS</p>
+          </div>
+          <div>
+            <h5>Peran Pengembang</h5>
+            <p id="modal-role">Full-Stack Web Developer</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 12px; align-items: center;">
+          <a href="https://github.com/rafaelfaustine45-collab" target="_blank" rel="noopener noreferrer" class="btn-project-code" style="padding: 10px 20px;">
+            <span>Lihat Repositori di GitHub</span> <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header-center">
+        <h2>What I Do</h2>
+        <p>Bidang keahlian dan fokus pengembangan solusi web yang saya kuasai</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-num">01</div>
+          <div class="service-icon-wrap">🌐</div>
+          <h3>Website Development</h3>
+          <p>Membangun landing page, portofolio, dan situs web modern dengan HTML5, CSS3, dan JavaScript yang cepat dan
+            responsive di semua perangkat.</p>
+          <div class="service-arrow">→</div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-num">02</div>
+          <div class="service-icon-wrap">🎨</div>
+          <h3>UI/UX Design</h3>
+          <p>Merancang antarmuka visual yang estetik, bersih, dan ramah pengguna mulai dari wireframe konsep hingga
+            prototipe fungsional.</p>
+          <div class="service-arrow">→</div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-num">03</div>
+          <div class="service-icon-wrap">⚙️</div>
+          <h3>Backend & Database</h3>
+          <p>Mengelola alur data, logika server berbasis PHP, serta integrasi database MySQL yang terstruktur dan aman.
+          </p>
+          <div class="service-arrow">→</div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-num">04</div>
+          <div class="service-icon-wrap">📱</div>
+          <h3>Mobile Responsiveness</h3>
+          <p>Memastikan setiap elemen halaman tampil sempurna pada ponsel pintar, tablet, hingga layar desktop lebar
+            tanpa ada elemen yang terpotong.</p>
+          <div class="service-arrow">→</div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-num">05</div>
+          <div class="service-icon-wrap">🤖</div>
+          <h3>AI Exploration</h3>
+          <p>Mengeksplorasi integrasi kecerdasan buatan, prompt engineering, dan alat bantu cerdas untuk meningkatkan
+            efisiensi pengembangan sistem.</p>
+          <div class="service-arrow">→</div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-num">06</div>
+          <div class="service-icon-wrap">🚀</div>
+          <h3>Deploy & Optimization</h3>
+          <p>Menyiapkan struktur file siap online (index.html, SEO meta tags, Open Graph preview) untuk deployment mulus
+            di Vercel, Netlify, atau GitHub Pages.</p>
+          <div class="service-arrow">→</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-target="4">0</div>
+          <div class="stat-label">Real-World Projects</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="500">0</div>
+          <div class="stat-label">Hours of Coding</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="100">0</div>
+          <div class="stat-label">% Passion & Dedication</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="2026">0</div>
+          <div class="stat-label">Target Milestone</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LANGUAGE & HOBBIES ============ -->
+  <section class="extras-section">
+    <div class="container">
+      <div class="extras-grid">
+
+        <!-- Languages -->
+        <div>
+          <h2 class="section-label">Languages</h2>
+          <div class="lang-list">
+            <div class="lang-item">
+              <h4>Bahasa Indonesia</h4>
+              <p>Native / Utama</p>
+            </div>
+            <div class="lang-item">
+              <h4>English</h4>
+              <p>Technical & Reading</p>
+            </div>
+            <div class="lang-item">
+              <h4>Bahasa Jawa</h4>
+              <p>Regional Language</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hobbies -->
+        <div>
+          <h2 class="section-label">Hobbies & Interests</h2>
+          <div class="hobbies-grid">
+            <div class="hobby-item">
+              <span class="hobby-icon">💻</span>
+              <span>Coding</span>
+            </div>
+            <div class="hobby-item">
+              <span class="hobby-icon">🎮</span>
+              <span>Gaming</span>
+            </div>
+            <div class="hobby-item">
+              <span class="hobby-icon">☕</span>
+              <span>Coffee</span>
+            </div>
+            <div class="hobby-item">
+              <span class="hobby-icon">🎵</span>
+              <span>Music</span>
+            </div>
+            <div class="hobby-item">
+              <span class="hobby-icon">📚</span>
+              <span>Learning</span>
+            </div>
+            <div class="hobby-item">
+              <span class="hobby-icon">⚡</span>
+              <span>Tech Gear</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT SECTION ============ -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left Contact Info -->
+        <div class="contact-left">
+          <h2>Let's build<br>something great<br>together <span class="sparkle">✦</span></h2>
+          <p>
+            Punya ide proyek, ingin bertukar pengalaman seputar dunia pemrograman, atau berkolaborasi dalam proyek baru?
+            Pintu saya selalu terbuka untuk koneksi yang positif.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">📧</div>
+              <div>
+                <h4>Email</h4>
+                <p>rafaelfaustine45@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">📍</div>
+              <div>
+                <h4>Lokasi</h4>
+                <p>Karanganyar, Jawa Tengah, Indonesia</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-row">
+            <!-- GitHub -->
+            <a href="https://github.com/rafaelfaustine45-collab" target="_blank" rel="noopener noreferrer"
+              class="social-circle" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="#24292E">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/rafafaustine" target="_blank" rel="noopener noreferrer" class="social-circle"
+              aria-label="Instagram" title="Instagram">
+              <svg viewBox="0 0 24 24">
+                <defs>
+                  <radialGradient id="igContactGrad" cx="0.2" cy="1" r="1">
+                    <stop offset="0%" stop-color="#FFDD55" />
+                    <stop offset="20%" stop-color="#FF543E" />
+                    <stop offset="60%" stop-color="#C837AB" />
+                    <stop offset="100%" stop-color="#3771C8" />
+                  </radialGradient>
+                </defs>
+                <rect width="24" height="24" rx="6" fill="url(#igContactGrad)" />
+                <path
+                  d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-8.6a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0zm1.8 1.9c-.1-1.3-.4-2.4-1.3-3.3s-2-1.2-3.3-1.3c-1.3-.1-5.3-.1-6.6 0-1.3.1-2.4.4-3.3 1.3S3.3 7.2 3.2 8.5c-.1 1.3-.1 5.3 0 6.6.1 1.3.4 2.4 1.3 3.3s2 1.2 3.3 1.3c1.3.1 5.3.1 6.6 0 1.3-.1 2.4-.4 3.3-1.3s1.2-2 1.3-3.3c.1-1.3.1-5.3 0-6.6zM17 19H7a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3z"
+                  fill="#ffffff" />
+              </svg>
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@rafaelfaustine" target="_blank" rel="noopener noreferrer" class="social-circle"
+              aria-label="TikTok" title="TikTok">
+              <svg viewBox="0 0 24 24" fill="#010101">
+                <path
+                  d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.86.12V9.42a6.34 6.34 0 0 0-1-.08A6.33 6.33 0 0 0 3 15.67a6.34 6.34 0 0 0 10.82 4.48c.38-.38.71-.8.97-1.26V9.06a8.16 8.16 0 0 0 4.8 1.55v-3.45a4.85 4.85 0 0 1-.22-.47z" />
+              </svg>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/6281280759980" target="_blank" rel="noopener noreferrer" class="social-circle"
+              aria-label="WhatsApp" title="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="#25D366">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Quotes Card -->
+        <div class="contact-quote-card">
+          <div class="quote-watermark">“</div>
+          <div class="quote-badge-top">
+            <span>✦</span> Developer's Thoughts
+          </div>
+
+          <blockquote class="quote-text-main" id="quote-display">
+            "Setiap baris kode adalah cara kita berdialog dengan masa depan. Belajar pemrograman bukan hanya tentang menghafal sintaks, melainkan seni memecahkan masalah nyata dan memberi dampak positif bagi banyak orang."
+          </blockquote>
+
+          <div class="quote-author-wrap">
+            <img src="pict.jpeg" alt="Rafael Latief Faustine" class="quote-author-avatar" id="quote-avatar" referrerpolicy="no-referrer">
+            <div class="quote-author-info">
+              <h4 id="quote-author">Rafael Latief Faustine</h4>
+              <p id="quote-role">✦ Pelajar RPL @ SMKN 2 Karanganyar</p>
+            </div>
+          </div>
+
+          <div class="quote-tags-row">
+            <span class="quote-tag-pill">#ContinuousLearning</span>
+            <span class="quote-tag-pill">#CleanCode</span>
+            <span class="quote-tag-pill">#StayCurious</span>
+            <span class="quote-tag-pill">#BuildWithPurpose</span>
+          </div>
+
+          <button type="button" class="btn-shuffle-quote" id="btn-next-quote" aria-label="Ganti Quotes">
+            <span>Ganti Quotes</span> <span>↻</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="sparkle">✦</span> Rafael.
+          </div>
+          <p>
+            Pelajar Rekayasa Perangkat Lunak (RPL) SMKN 2 Karanganyar. Terus belajar, bereksplorasi, dan membangun masa
+            depan digital.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Navigation</h4>
+          <a href="#home">Home</a>
+          <a href="#about">About me</a>
+          <a href="#resume">Resume</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Focus</h4>
+          <a href="#services">Web Development</a>
+          <a href="#services">Frontend & UI/UX</a>
+          <a href="#services">PHP & Database</a>
+          <a href="#services">AI Exploration</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Connect</h4>
+          <a href="https://github.com/rafaelfaustine45-collab" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.instagram.com/rafafaustine" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.tiktok.com/@rafaelfaustine" target="_blank" rel="noopener noreferrer">TikTok</a>
+          <a href="https://wa.me/6281280759980" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2026</span> Rafael Latief Faustine. SMKN 2 Karanganyar. All rights reserved.</p>
+        <a href="#home" class="back-to-top">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WA BUTTON -->
+  <a href="https://wa.me/6281280759980?text=Halo%20Rafael%2C%20saya%20tertarik%20dengan%20portofolio%20kamu."
+    target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Chat WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+    <span>Chat WA</span>
+  </a>
+
+  <!-- ============ JAVASCRIPT ============ -->
+  <script>
+    (() => {
+      'use strict';
+
+      /* 1. Preloader */
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          const preloader = document.getElementById('preloader');
+          if (preloader) preloader.classList.add('done');
+        }, 1100);
+      });
+
+      /* 2. Custom Cursor */
+      const cursor = document.getElementById('cursor');
+      const cursorDot = document.getElementById('cursor-dot');
+      if (cursor && cursorDot && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+        document.addEventListener('mousemove', e => {
+          cursor.style.left = e.clientX + 'px';
+          cursor.style.top = e.clientY + 'px';
+          cursorDot.style.left = e.clientX + 'px';
+          cursorDot.style.top = e.clientY + 'px';
+        });
+
+        document.querySelectorAll('a, button, .service-card, .hobby-item, .skill-icon-box').forEach(el => {
+          el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+          el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+        });
+      }
+
+      /* 3. Sticky Navbar */
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 40) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+
+      /* 4. Mobile Menu Toggle */
+      const navToggle = document.getElementById('nav-toggle');
+      const navLinks = document.getElementById('nav-links');
+      if (navToggle && navLinks) {
+        navToggle.addEventListener('click', () => {
+          navToggle.classList.toggle('open');
+          navLinks.classList.toggle('open');
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            navToggle.classList.remove('open');
+            navLinks.classList.remove('open');
+          });
+        });
+
+        document.addEventListener('click', e => {
+          if (!navLinks.contains(e.target) && !navToggle.contains(e.target)) {
+            navToggle.classList.remove('open');
+            navLinks.classList.remove('open');
+          }
+        });
+      }
+
+      /* 5. Animated Stats Counter */
+      const statNumbers = document.querySelectorAll('.stat-number');
+      let statsAnimated = false;
+
+      function animateStats() {
+        if (statsAnimated) return;
+        statNumbers.forEach(item => {
+          const target = +item.getAttribute('data-target');
+          let count = 0;
+          const speed = target > 100 ? 15 : 40;
+          const inc = Math.max(1, Math.floor(target / 45));
+
+          const updateCount = () => {
+            count += inc;
+            if (count < target) {
+              item.innerText = count;
+              setTimeout(updateCount, speed);
+            } else {
+              item.innerText = target + (target === 100 || target === 4 || target === 500 ? '+' : '');
+            }
+          };
+          updateCount();
+        });
+        statsAnimated = true;
+      }
+
+      /* 6. Animated Coding Bars */
+      const fills = document.querySelectorAll('.coding-fill');
+      function animateBars() {
+        fills.forEach(bar => {
+          bar.style.width = bar.getAttribute('data-width');
+        });
+      }
+
+      /* 7. ScrollTrigger or IntersectionObserver */
+      if ('IntersectionObserver' in window) {
+        const statsSection = document.querySelector('.stats-section');
+        if (statsSection) {
+          const statsObs = new IntersectionObserver(entries => {
+            if (entries[0].isIntersecting) animateStats();
+          }, { threshold: 0.3 });
+          statsObs.observe(statsSection);
+        }
+
+        const skillsSection = document.getElementById('skills');
+        if (skillsSection) {
+          const skillsObs = new IntersectionObserver(entries => {
+            if (entries[0].isIntersecting) animateBars();
+          }, { threshold: 0.2 });
+          skillsObs.observe(skillsSection);
+        }
+      } else {
+        animateStats();
+        animateBars();
+      }
+
+      /* 8. Interactive Quotes Rotator */
+      const quotesList = [
+        {
+          text: '"Setiap baris kode adalah cara kita berdialog dengan masa depan. Belajar pemrograman bukan hanya tentang menghafal sintaks, melainkan seni memecahkan masalah nyata dan memberi dampak positif bagi banyak orang."',
+          author: 'Rafael Latief Faustine',
+          role: '✦ Pelajar RPL @ SMKN 2 Karanganyar',
+          avatar: 'pict.jpeg'
+        },
+        {
+          text: '"Talk is cheap. Show me the code. Pemahaman sejati lahir dari keberanian mencoba, gagal, dan memperbaiki kembali secara konsisten."',
+          author: 'Linus Torvalds',
+          role: '✦ Pencipta Linux & Git',
+          avatar: 'https://upload.wikimedia.org/wikipedia/commons/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg'
+        },
+        {
+          text: '"Satu-satunya cara untuk menghasilkan karya hebat adalah dengan mencintai apa yang kamu kerjakan. Jangan pernah berhenti penasaran dan bereksplorasi."',
+          author: 'Steve Jobs',
+          role: '✦ Co-founder Apple Inc.',
+          avatar: 'https://upload.wikimedia.org/wikipedia/commons/f/f5/Steve_Jobs_Headshot_2010-CROP2.jpg'
+        },
+        {
+          text: '"Programmer yang hebat menulis kode yang dapat dimengerti manusia, bukan hanya mesin. Kesederhanaan dan fungsi adalah puncak keindahan sebuah sistem."',
+          author: 'Martin Fowler',
+          role: '✦ Software Architect & Author',
+          avatar: 'https://walfordwalk.com/wp-content/uploads/2025/04/martin-eepitome-00.jpg?w=1000',
+          backupAvatar: 'https://martinfowler.com/mf.jpg'
+        }
+      ];
+
+      const quoteDisplay = document.getElementById('quote-display');
+      const quoteAuthor = document.getElementById('quote-author');
+      const quoteRole = document.getElementById('quote-role');
+      const quoteAvatar = document.getElementById('quote-avatar');
+      const nextQuoteBtn = document.getElementById('btn-next-quote');
+      let currentQuoteIndex = 0;
+
+      if (nextQuoteBtn && quoteDisplay && quoteAuthor && quoteRole && quoteAvatar) {
+        quoteAvatar.onerror = function() {
+          const item = quotesList[currentQuoteIndex];
+          if (item && item.backupAvatar && this.src !== item.backupAvatar) {
+            this.src = item.backupAvatar;
+            return;
+          }
+          this.onerror = null;
+          this.src = 'https://ui-avatars.com/api/?name=' + encodeURIComponent((item && item.author) || 'Author') + '&background=10b981&color=fff';
+        };
+
+        nextQuoteBtn.addEventListener('click', () => {
+          currentQuoteIndex = (currentQuoteIndex + 1) % quotesList.length;
+          quoteDisplay.style.opacity = '0';
+          quoteAvatar.style.opacity = '0';
+          setTimeout(() => {
+            const current = quotesList[currentQuoteIndex];
+            quoteDisplay.innerText = current.text;
+            quoteAuthor.innerText = current.author;
+            quoteRole.innerText = current.role;
+            quoteAvatar.src = current.avatar;
+            quoteAvatar.alt = current.author;
+            quoteDisplay.style.opacity = '1';
+            quoteAvatar.style.opacity = '1';
+          }, 200);
+        });
+      }
+
+      /* 9. Set Current Year */
+      const yearEl = document.getElementById('year');
+      if (yearEl) yearEl.innerText = new Date().getFullYear();
+
+      /* 10. Featured Projects: Filter Tabs & Lightbox Modal */
+      const projectData = {
+        youthkra: {
+          title: 'YOUTHKRA — Platform Kolaborasi Pemuda Karanganyar',
+          cat: 'Youth Ecosystem & Platform',
+          img: 'project-youthkra.png',
+          desc: 'Platform ruang pemuda Karanganyar yang menghadirkan pengalaman modern dark theme. Dilengkapi sistem personal space untuk memantau progres belajar mandiri, manajemen e-sertifikat, galeri karya pemuda, portal pendaftaran event, dan jejaring direktori komunitas lokal.',
+          tech: 'Native PHP, Tailwind CSS, JavaScript Modern, MySQL',
+          role: 'Full-Stack Developer & UI/UX Designer'
+        },
+        karangtaruna: {
+          title: 'Portal & Kas Karang Taruna "Melati Putih"',
+          cat: 'Internal Financial Management',
+          img: 'project-karangtaruna.png',
+          desc: 'Aplikasi manajemen kas internal dan transparansi keuangan Karang Taruna Melati Putih RT 05 / RW 02. Memiliki modul pencatatan kas masuk/keluar, tracking buku iuran wajib bulanan pemuda/warga, generator rekapitulasi laporan pertanggungjawaban (LPJ), fitur ekspor Excel/cetak, serta monitoring agenda rapat dan kegiatan pemuda.',
+          tech: 'Native PHP, CSS3 Modern, JavaScript, MySQL, Ekspor LPJ',
+          role: 'Full-Stack Web Developer'
+        },
+        ppdb: {
+          title: 'Portal Resmi & Sistem PPDB SMK Bhina Karya Karanganyar',
+          cat: 'Institutional Web & Admission System',
+          img: 'project-ppdb.png',
+          desc: 'Website institusi pendidikan sekaligus sistem Penerimaan Peserta Didik Baru (PPDB / SPMB Online). Memfasilitasi pendaftaran calon peserta didik secara digital, pengecekan status verifikasi seleksi secara mandiri, katalog jurusan keahlian vokasi, profil fasilitas, dan informasi Bursa Kerja Khusus (BKK).',
+          tech: 'Native PHP, HTML5, CSS3, JavaScript, Bootstrap 5, MySQL',
+          role: 'Full-Stack Web Developer'
+        },
+        kasbuku: {
+          title: 'Sistem Buku Kas & Keuangan Toko (Retail)',
+          cat: 'Financial Dashboard & Bookkeeping',
+          img: 'project-kasbuku.png',
+          desc: 'Aplikasi dashboard keuangan retail berbasis arsitektur MVC CodeIgniter 3. Menyediakan rekapitulasi cash flow harian dan bulanan, kontrol pemasukan dan pengeluaran operasional toko, perhitungan saldo akhir otomatis, dan hak akses multi-user.',
+          tech: 'CodeIgniter 3 (CI3), PHP MVC, Bootstrap, MySQL',
+          role: 'Backend & Web Developer'
+        }
+      };
+
+      // Filter Tabs
+      const filterBtns = document.querySelectorAll('.project-filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filterVal = btn.getAttribute('data-filter');
+          projectCards.forEach(card => {
+            const categories = card.getAttribute('data-category') || '';
+            if (filterVal === 'all' || categories.includes(filterVal)) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Lightbox Modal
+      const projectModal = document.getElementById('project-modal');
+      const modalCloseBtn = document.getElementById('modal-close-btn');
+      const modalImg = document.getElementById('modal-img');
+      const modalCat = document.getElementById('modal-cat');
+      const modalTitle = document.getElementById('modal-title');
+      const modalDesc = document.getElementById('modal-desc');
+      const modalTech = document.getElementById('modal-tech');
+      const modalRole = document.getElementById('modal-role');
+
+      document.querySelectorAll('.js-open-project').forEach(trigger => {
+        trigger.addEventListener('click', () => {
+          const id = trigger.getAttribute('data-id');
+          const data = projectData[id];
+          if (data && projectModal) {
+            modalImg.src = data.img;
+            modalImg.alt = data.title;
+            modalCat.innerText = data.cat;
+            modalTitle.innerText = data.title;
+            modalDesc.innerText = data.desc;
+            modalTech.innerText = data.tech;
+            modalRole.innerText = data.role;
+            projectModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+          }
+        });
+      });
+
+      function closeModal() {
+        if (projectModal) {
+          projectModal.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      }
+
+      if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeModal);
+      if (projectModal) {
+        projectModal.addEventListener('click', e => {
+          if (e.target === projectModal) closeModal();
+        });
+      }
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && projectModal && projectModal.classList.contains('active')) {
+          closeModal();
+        }
+      });
+
+    })();
+  </script>
+</body>
+
+</html>
